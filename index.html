@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+        *{
+            padding: 0px;
+            margin:0px;
+        }
+        #navbar{
+            width:99vw;
+            height: 10vh;
+            background-color: green;
+        }
+        #mainlist{
+            display: flex;
+            list-style: none;
+            justify-content:right;
+            
+        }
+        .mli{
+             width:160px;
+             font-size: 20px;
+             position: relative;
+             bottom: 20px;
+             cursor: pointer;
+        }
+        #heading{
+            position: relative;
+            top:15px;
+            padding: 80px;
+            font-size: 30px;
+        }
+        #about{
+            width:99vw;
+            height: 120vh;
+            background-color: black;
+        }
+        #headingAbout{
+            text-align: center;
+            color:white;
+            padding: 20px;
+            font-size: 30px;
+        }
+        #imgOfMe{
+            width:350px;
+            margin:100px;
+        }
+        .para{
+            width:500px;
+            position:relative;
+            left:550px;
+            bottom:450px;
+            color:white;
+            letter-spacing:2px;
+        }
+        #projec{
+            width:99vw;
+            height:50vh;
+            background-color: grey;
+        }
+        .list{
+            margin-left: 100px;
+            font-size: 20px;
+        }
+        #achieve{
+            width:99vw;
+            height:300px;
+            background-color:black;
+            padding-top: 20px
+        }
+        #ullist{
+            margin:100px;
+            color:white;
+        }
+        #sub{
+            margin-left: 40px;
+        }
+        #ullist1{
+            margin:100px;
+            color:white;
+            position: relative;
+            bottom: 80px;
+            right:100px;
+        }
+        #sub1{
+            margin-left: 40px;
+        }
+        #help{
+            width:99vw;
+            height:90vh;
+            background-color:grey;
+        }
+        .headers{
+            color:black;
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 20px;
+        }
+        .header{
+            color:green;
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 20px;
+        }
+        #subcontact{
+            width:400px;
+            height:380px;
+            background-color: black;
+            position: relative;
+            left:500px;
+            top:50px;
+        }
+        .intputs{
+            color:white;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        #submitbutton{
+            position: relative;
+            left:200px;
+            width:80px;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        #contactSugest{
+            width:99vw;
+            height: 10vh;
+            background-color: green;
+        }
+        #nau{
+            position: relative;
+            bottom:100px;
+            left:80vw;
+            color:black;
+        }
+        #ins{
+            position: relative;
+            bottom:65px;
+            left:60vw;
+            color:black;
+        }
+        #twi{
+            position:relative;
+            bottom: 30px;
+            left:40vw;
+            color:black;
+        }
+        #lin{
+            position: relative;
+            top:10px;
+            left:20vw;
+            color:black;
+        }
+        #end{
+            width:99vw;
+            height:10vh;
+            background-color: black;
+        }
+        .endmsg{
+            color:green;
+            margin-left: 30px;
+            padding-top: 20px;
+            opacity: 0.7;
+        }
+   </style>
+</head>
+<body>
+    <div id="navbar">
+        <h id="heading">DURGA VIJAY</h>
+        <ul id="mainlist">
+            <li class="mli" id="h">Home</li>
+            <li class="mli" id="a">About</li>
+            <li class="mli" id="p">Projects</li>
+            <li class="mli" id="ach">Achievement</li>
+            <li class="mli" id="c" onclick="fun()">Contact</li>
+        </ul>
+    </div>
+    <div id="about">
+        <h1 class="header">Hi DURGA</h1>
+        <br><br>
+        <hr style="opacity: 0.3;">
+        <h1 class="header">About Me</h1>
+        <img id="imgOfMe" src="D:\WebTechnology\portfolio\portfolio\imgs\VIJAYIMG.jpg">
+        <p class="para"> Thanks for Your Intrest,here is a quick story of me and this website.</p>
+        <br><br>
+        <p class="para">My name is Durga vijay i completed my graduation in the year 2022 in Siddartha institute of science and Technology. After completing My graduation i was came to hyderbad for learning on cource It is useful to me To develop an simple portpolio.</p>
+        <br>
+        <h3 class="para">cheers,</h3>
+        <h3 class="para">Durga vijay</h3>
+    </div>
+    <div id="projec">
+        <h1 class="headers">Projects</h1>
+        <li class="list">Bank Registration By using Java</li>
+        <br>
+        <li class="list">Build a Library station</li>
+        <br>
+        <li class="list">Calculator By Using HTML & CSS</li>
+        <br>
+        <li class="list">LogIn Page By Using HTML & CSS</li>
+        <br>
+        <li class="list">Digital clock</li>
+    </div>
+    <div id="achieve">
+        <h1 class="header">Achievements</h1>
+        <ul type="circle" id="ullist">
+            <li>Intern at CRP company in chennai
+                <ul type="square" id="sub">
+                    <li >January,2019</li>
+                    <li >Work On Mechnical Subject Like Production.</li>
+                </ul>
+            </li>
+            <ul type="circle" id="ullist1">
+                <li>Training On Java In Jspyders
+                    <ul type="square" id="sub1">
+                        <li>July,2022-present</li>
+                        <li >Java Full Stack Certification</li>
+                    </ul>
+                </li>
+    </div>
+    <div id="help">
+        <h1 class="headers">Contact</h1>
+        <div id="subcontact">
+            <form>
+                <br><br>
+                <label class="intputs">Name</label>
+                <input type="text" style="width:250px;margin-left: 20px;">
+                <br><br><br>
+                <label  class="intputs">Email</label>
+                <input type="email" style="width:250px;margin-left: 20px;">
+                <br><br><br>
+                <label  class="intputs">Number</label>
+                <input type="number" style="width:250px;margin-left: 20px;">
+                <br><br><br>
+                <label  class="intputs">Message</label>
+                <input type="text" style="width:250px;margin-left: 20px;height: 100px;;">
+                <br><br>
+                <input type="submit" value="submit" id="submitbutton">
+            </form>
+        </div>
+    </div>
+    <div id="contactSugest">
+       <a href="https://www.linkedin.com/in/durga-vijay-962a76262" style="text-decoration: none;"><h1 id="lin">Linkedin</h1></a> 
+        <a href="https://www.twitter.com" style="text-decoration: none;"><h1 id="twi">Twitter</h1></a>
+       <a href="https://www.instagram.com/vijay_vk_bunny_18" style="text-decoration: none;"><h1 id="ins">Intagram</h1></a> 
+        <a href="https://www.naukri.com" style="text-decoration: none;"><h1 id="nau">Naukari</h1></a>
+    </div>
+    <div id="end">
+        <h2 class="endmsg" >@Copyright 2050 by nobody.All rights reserved</h2>
+    </div>
+    <script>
+        function fun()
+        {
+            document.getElementById("help").style.
+        }
+    </script>
+</body>
+</html>
